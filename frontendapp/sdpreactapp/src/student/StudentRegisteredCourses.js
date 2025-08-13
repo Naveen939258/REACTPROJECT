@@ -11,7 +11,7 @@ export default function StudentRegisteredCourses() {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const res = await axios.get(`http://localhost:2004/registeredcourses/${studentEmail}`);
+        const res = await axios.get(`https://reactproject-5xke.onrender.com/registeredcourses/${studentEmail}`);
         setCourses(res.data || []);
       } catch (error) {
         console.error("Error fetching registered courses", error);

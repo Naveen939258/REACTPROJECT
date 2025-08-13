@@ -9,7 +9,7 @@ export default function ViewStudents() {
 
   const fetchStudents = async () => {
     try {
-      const response = await axios.get('http://localhost:2004/viewstudents');
+      const response = await axios.get('https://reactproject-5xke.onrender.com/viewstudents');
       setStudents(response.data);
     } catch (error) {
       console.error(error.message);

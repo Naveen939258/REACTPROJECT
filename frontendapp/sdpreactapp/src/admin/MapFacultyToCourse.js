@@ -12,7 +12,7 @@ export default function MapFacultyToCourse() {
 
   // Fetch Faculties
   useEffect(() => {
-    axios.get("http://localhost:2004/viewfacultys")
+    axios.get("https://reactproject-5xke.onrender.com/viewfacultys")
       .then(res => {
         if (Array.isArray(res.data)) setFaculties(res.data);
       })
@@ -21,7 +21,7 @@ export default function MapFacultyToCourse() {
 
   // Fetch Courses
   useEffect(() => {
-    axios.get("http://localhost:2004/viewcourses")
+    axios.get("https://reactproject-5xke.onrender.com/viewcourses")
       .then(res => {
         if (Array.isArray(res.data)) setCourses(res.data);
       })
@@ -38,7 +38,7 @@ export default function MapFacultyToCourse() {
       return;
     }
 
-    axios.post("http://localhost:2004/mapfaculty", {
+    axios.post("https://reactproject-5xke.onrender.com/mapfaculty", {
       facultyId: selectedFaculty,
       courseId: selectedCourse
     })

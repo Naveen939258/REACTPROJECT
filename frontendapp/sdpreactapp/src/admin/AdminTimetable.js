@@ -16,8 +16,8 @@ export default function AdminAddTimetable() {
   // Fetch courses and faculties
   const fetchOptions = async () => {
     try {
-      const courseRes = await axios.get("http://localhost:2004/viewcourses");
-      const facultyRes = await axios.get("http://localhost:2004/viewfacultys");
+      const courseRes = await axios.get("https://reactproject-5xke.onrender.com/viewcourses");
+      const facultyRes = await axios.get("https://reactproject-5xke.onrender.com/viewfacultys");
       setCourses(courseRes.data);
       setFaculties(facultyRes.data);
     } catch (err) {
@@ -38,7 +38,7 @@ export default function AdminAddTimetable() {
     }
 
     try {
-      const res = await axios.post("http://localhost:2004/timetable", {
+      const res = await axios.post("https://reactproject-5xke.onrender.com/timetable", {
         day,
         timeSlot,
         courseId,

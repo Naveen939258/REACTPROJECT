@@ -21,7 +21,7 @@ export default function StudentLogin({ onStudentLogin }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:2004/checkstudentlogin', formData);
+      const response = await axios.post('https://reactproject-5xke.onrender.com/checkstudentlogin', formData);
 
       if (response.status === 200 && response.data) {
         onStudentLogin && onStudentLogin();

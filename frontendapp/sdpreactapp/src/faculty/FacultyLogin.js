@@ -24,7 +24,7 @@ export default function FacultyLogin({onFacultyLogin})
     e.preventDefault();
     try 
     {
-      const response = await axios.post('http://localhost:2004/checkfacultylogin', formData);
+      const response = await axios.post('https://reactproject-5xke.onrender.com/checkfacultylogin', formData);
       if (response.data!=null) 
       {
         onFacultyLogin();

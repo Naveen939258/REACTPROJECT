@@ -36,7 +36,7 @@ export default function FacultyRegistration()
     e.preventDefault();
     try 
     {
-      const response = await axios.post('http://localhost:2004/insertfaculty', formData);
+      const response = await axios.post('https://reactproject-5xke.onrender.com/insertfaculty', formData);
       if (response.status === 200) 
       {
         setFormData({

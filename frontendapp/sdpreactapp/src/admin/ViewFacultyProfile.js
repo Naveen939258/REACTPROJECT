@@ -10,7 +10,7 @@ export default function ViewFacultyProfile() {
   useEffect(() => {
     const fetchFacultyData = async () => {
       try {
-        const response = await axios.get(`http://localhost:2004/viewfacultyprofile/${email}`);
+        const response = await axios.get(`https://reactproject-5xke.onrender.com/viewfacultyprofile/${email}`);
         setFacultyData(response.data);
       } catch (error) {
         console.error(error.message);

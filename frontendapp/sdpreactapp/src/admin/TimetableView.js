@@ -21,10 +21,10 @@ function EditTimetableModal({ entryId, onClose, onSaved, open }) {
     const fetchAll = async () => {
       try {
         const [cRes, fRes, mRes, entryRes] = await Promise.all([
-          axios.get("http://localhost:2004/viewcourses").then(r => r.data).catch(() => []),
-          axios.get("http://localhost:2004/viewfacultys").then(r => r.data).catch(() => []),
-          axios.get("http://localhost:2004/viewmappedfaculty").then(r => r.data).catch(() => []),
-          axios.get(`http://localhost:2004/timetable/${entryId}`).then(r => r.data)
+          axios.get("https://reactproject-5xke.onrender.com/viewcourses").then(r => r.data).catch(() => []),
+          axios.get("https://reactproject-5xke.onrender.com/viewfacultys").then(r => r.data).catch(() => []),
+          axios.get("https://reactproject-5xke.onrender.com/viewmappedfaculty").then(r => r.data).catch(() => []),
+          axios.get(`https://reactproject-5xke.onrender.com/timetable/${entryId}`).then(r => r.data)
         ]);
 
         setCourses(Array.isArray(cRes) ? cRes : []);
@@ -72,7 +72,7 @@ function EditTimetableModal({ entryId, onClose, onSaved, open }) {
     }
 
     try {
-      const res = await axios.put(`http://localhost:2004/timetable/${entryId}`, {
+      const res = await axios.put(`https://reactproject-5xke.onrender.com/timetable/${entryId}`, {
         day: form.day,
         timeSlot: form.timeSlot,
         courseId: form.courseId,
@@ -151,7 +151,7 @@ export default function TimetableView() {
 
   const fetchTimetable = async () => {
     try {
-      const res = await axios.get("http://localhost:2004/gettimetable");
+      const res = await axios.get("https://reactproject-5xke.onrender.com/gettimetable");
       setTimetable(res.data || []);
     } catch (err) {
       console.error("Error fetching timetable:", err);

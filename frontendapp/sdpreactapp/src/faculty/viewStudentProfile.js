@@ -10,7 +10,7 @@ export default function ViewStudentProfile() {
   useEffect(() => {
     const fetchStudentData = async () => {
       try {
-        const response = await axios.get(`http://localhost:2004/viewstudentprofile/${email}`);
+        const response = await axios.get(`https://reactproject-5xke.onrender.com/viewstudentprofile/${email}`);
         setStudentData(response.data);
       } catch (error) {
         console.error(error.message);

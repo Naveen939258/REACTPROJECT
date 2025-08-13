@@ -44,10 +44,10 @@ export default function UpdateFacultyProfile() {
       if (Object.keys(updatedData).length !== 0) {
         // There are changes
         updatedData.email = facultyData.email;
-        const response = await axios.put('http://localhost:2004/updatefacultyprofile', updatedData);
+        const response = await axios.put('https://reactproject-5xke.onrender.com/updatefacultyprofile', updatedData);
         setMessage(response.data);
         setError('');
-        const res = await axios.get(`http://localhost:2004/facultyprofile/${facultyData.email}`, updatedData)
+        const res = await axios.get(`https://reactproject-5xke.onrender.com/facultyprofile/${facultyData.email}`, updatedData)
          localStorage.setItem("faculty",JSON.stringify(res.data))
       } else {
         // No changes

@@ -20,7 +20,7 @@ export default function StudentTimeTable() {
     }
 
     axios
-      .get(`http://localhost:2004/student/timetable/${studentEmail}`)
+      .get(`https://reactproject-5xke.onrender.com/student/timetable/${studentEmail}`)
       .then((res) => {
         setTimetable(res.data || []);
       })

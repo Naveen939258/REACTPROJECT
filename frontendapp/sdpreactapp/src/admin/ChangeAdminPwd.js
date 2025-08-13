@@ -34,7 +34,7 @@ export default function ChangeAdminPwd() {
     e.preventDefault();
     try 
     {
-      const response = await axios.put('http://localhost:2032/changeadminpwd', {...formData,"username":adminData.username});
+      const response = await axios.put('https://reactproject-5xke.onrender.com/changeadminpwd', {...formData,"username":adminData.username});
       if (response.data != null) 
       {
         localStorage.removeItem('isAdminLoggedIn');

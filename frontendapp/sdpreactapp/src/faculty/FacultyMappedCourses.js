@@ -20,7 +20,7 @@ export default function FacultyMappedCourses() {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:2004/courseswithstudents/${facultyEmail}`
+          `https://reactproject-5xke.onrender.com/courseswithstudents/${facultyEmail}`
         );
         setCourses(res.data);
       } catch (err) {

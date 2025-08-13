@@ -10,7 +10,7 @@ export default function ViewFacultys() {
 
   const fetchFacultys = async () => {
     try {
-      const response = await axios.get("http://localhost:2004/viewfacultys");
+      const response = await axios.get("https://reactproject-5xke.onrender.com/viewfacultys");
       setFacultys(response.data);
     } catch (error) {
       console.error("Error fetching faculties:", error.message);
@@ -26,7 +26,7 @@ export default function ViewFacultys() {
   const deleteFaculty = async (email) => {
     if (!window.confirm("Are you sure you want to delete this faculty?")) return;
     try {
-      await axios.delete(`http://localhost:2004/deletefaculty/${email}`);
+      await axios.delete(`https://reactproject-5xke.onrender.com/deletefaculty/${email}`);
       fetchFacultys();
     } catch (error) {
       console.error("Error deleting faculty:", error.message);

@@ -16,12 +16,12 @@ function StudentCourse() {
   const studentEmail = (localStorage.getItem('studentEmail') || '').trim().toLowerCase();
 
   useEffect(() => {
-    axios.get('http://localhost:2004/viewcourses')
+    axios.get('https://reactproject-5xke.onrender.com/viewcourses')
       .then(res => setCourses(res.data || []))
       .catch(() => setError("Failed to load courses"));
 
     if (studentEmail) {
-      axios.get(`http://localhost:2004/registeredcourses/${studentEmail}`)
+      axios.get(`https://reactproject-5xke.onrender.com/registeredcourses/${studentEmail}`)
         .then(res => {
           const regs = res.data || [];
           const set = new Set(regs.map(r => r.courseno.toLowerCase().trim()));
@@ -74,7 +74,7 @@ function StudentCourse() {
         s: ltps.s
       };
 
-      const res = await axios.post('http://localhost:2004/insertcourse', payload);
+      const res = await axios.post('https://reactproject-5xke.onrender.com/insertcourse', payload);
 
       setMessage(res.data || "Registered Successfully");
       setError('');

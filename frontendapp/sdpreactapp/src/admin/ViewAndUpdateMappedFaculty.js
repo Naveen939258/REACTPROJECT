@@ -20,19 +20,19 @@ export default function ViewAndUpdateMappedFaculty() {
   }, []);
 
   const fetchMappings = () => {
-    axios.get("http://localhost:2004/viewmappedfaculty")
+    axios.get("https://reactproject-5xke.onrender.com/viewmappedfaculty")
       .then(res => setMappings(res.data))
       .catch(() => setMappings([]));
   };
 
   const fetchFaculties = () => {
-    axios.get("http://localhost:2004/viewfacultys")
+    axios.get("https://reactproject-5xke.onrender.com/viewfacultys")
       .then(res => setFaculties(res.data))
       .catch(() => setFaculties([]));
   };
 
   const fetchCourses = () => {
-    axios.get("http://localhost:2004/viewcourses")
+    axios.get("https://reactproject-5xke.onrender.com/viewcourses")
       .then(res => setCourses(res.data))
       .catch(() => setCourses([]));
   };
@@ -61,7 +61,7 @@ export default function ViewAndUpdateMappedFaculty() {
       return;
     }
 
-    axios.put(`http://localhost:2004/updatemappedfaculty/${editMappingId}`, {
+    axios.put(`https://reactproject-5xke.onrender.com/updatemappedfaculty/${editMappingId}`, {
       facultyId: selectedFaculty,
       courseId: selectedCourse
     })

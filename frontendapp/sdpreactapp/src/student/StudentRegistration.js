@@ -23,7 +23,7 @@ export default function StudentRegistration() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:2004/insertstudent', formData);
+      const response = await axios.post('https://reactproject-5xke.onrender.com/insertstudent', formData);
       if (response.status === 200) {
         setFormData({
           ID: '',

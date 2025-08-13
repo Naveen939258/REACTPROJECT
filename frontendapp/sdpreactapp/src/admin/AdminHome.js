@@ -18,7 +18,7 @@ export default function AdminHome() {
 
   const fetchCounts = async () => {
     try {
-      const response = await axios.get(`http://localhost:2004/analysis`);
+      const response = await axios.get(`https://reactproject-5xke.onrender.com/analysis`);
       setCounts(response.data);
     } catch (error) {
       setError('Failed to fetch counts');

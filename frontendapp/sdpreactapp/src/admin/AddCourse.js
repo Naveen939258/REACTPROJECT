@@ -27,7 +27,7 @@ export default function AddCourse() {
     setMessage('');
     setError('');
     try {
-      const res = await axios.post('http://localhost:2004/addcourse', formData);
+      const res = await axios.post('https://reactproject-5xke.onrender.com/addcourse', formData);
       setMessage(res.data); // Success message from backend
       setFormData({ courseno: '', coursename: '', modes: '' });
     } catch (err) {

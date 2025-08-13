@@ -23,7 +23,7 @@ const faculty = JSON.parse(localStorage.getItem("faculty"));
     }
 
     axios
-      .get(`http://localhost:2004/faculty/timetable/${facultyEmail}`)
+      .get(`https://reactproject-5xke.onrender.com/faculty/timetable/${facultyEmail}`)
       .then((res) => setTimetable(res.data || []))
       .catch((err) => {
         console.error("Error fetching timetable:", err);
