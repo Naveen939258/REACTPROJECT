@@ -1,13 +1,19 @@
 🎓 Academic Student Course Registration System
-📌 Overview
-The Academic Student Course Registration System is a full-stack web application designed to streamline the process of course registration for students and faculty in an academic institution.
-It provides separate modules for Students, Faculty, and Administrators, enabling efficient course management, faculty assignment, and student enrollment.
+🚀 Project Overview
+The Academic Student Course Registration System is a full-stack web application designed to streamline the course registration process for students and faculty in an academic institution. It provides separate modules for Students, Faculty, and Administrators, enabling efficient course management, faculty assignments, and student enrollment.
+
 🔗 Project Links
-🔗 Live Site (Render Deployment): 
-📰 LinkedIn Article: [click here](https://www.linkedin.com/pulse/academic-student-course-registration-system-kakarla-naveen-dd2rc/?trackingId=lpI%2FzasiTAG5lAqjAL2C%2Fg%3D%3D)
-📹 Video Demo: click here
+🌐 Live Site (Render Deployment): Click Here
+
+📄 LinkedIn Article: Click Here
+
+🎥 Video Demo: Click Here
+
+📖 Introduction
+This system simplifies academic course registration by offering intuitive interfaces for students, faculty, and admins. Students can register for courses, view timetables, and track enrollment. Faculty can manage the courses they teach, update schedules, and track enrolled students. Admins handle account approvals, course creation, and scheduling.
+
 ✨ Features
-🧑‍🎓 Student Module
+🎓 Student Module
 Student registration and login
 
 View available courses with details (code, title, credits, faculty)
@@ -18,7 +24,7 @@ View personal timetable
 
 Track registered courses
 
-👩‍🏫 Faculty Module
+🧑‍🏫 Faculty Module
 Faculty registration and login
 
 Add or update courses they teach
@@ -27,27 +33,20 @@ View list of enrolled students
 
 Manage course schedules and class timings
 
-🛠️ Admin Module
+🛠 Admin Module
 Approve new student/faculty accounts
 
 Create, update, or remove courses
 
 Assign faculty to courses
 
-Manage academic calendar and timetable
+Manage academic schedules
 
-🖥️ Tech Stack
-Frontend:
-
-React.js
-
-HTML5, CSS3
-
-Bootstrap / Material UI
-
-Backend:
-
-Node.js + Express.js
+🛠 Tech Stack
+Frontend: React.js, CSS, Bootstrap/Tailwind
+Backend: Node.js, Express.js
+Database: MongoDB / MySQL
+Deployment: Render / Vercel
 
 Database:
 
