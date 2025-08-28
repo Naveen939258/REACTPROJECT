@@ -8,7 +8,7 @@ The **Academic Student Course Registration System** is a full-stack web applicat
 ## 🔗 Project Links
 - 🌐 **Live Site (Render Deployment):** [Click Here](https://reactproject-frontend-b592.onrender.com/)
 - 📄 **LinkedIn Article:** [Click Here](https://www.linkedin.com/pulse/academic-student-course-registration-system-kakarla-naveen-dd2rc/?trackingId=lpI%2FzasiTAG5lAqjAL2C%2Fg%3D%3D)
-- 🎥 **Video Demo:** [Click Here](#)
+- 🎥 **Video Demo:** [Click Here](https://drive.google.com/file/d/1HkxVN2n9mJFbHFNMffflti9_eXnsPMRm/view?usp=sharing)
 
 ---
 
