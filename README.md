@@ -53,9 +53,9 @@ This system simplifies academic course registration by offering intuitive interf
 ---
 
 ## 📸 Screenshots
-- Login Page  
-- Student Dashboard  
-- Faculty Dashboard  
+- Login Page:**[click here](https://drive.google.com/drive/folders/1jR_7B6e2MkvzQ3Jf0EwbfXGzt-gCe7gr?usp=sharing)  
+- Student Dashboard:**[click here](https://drive.google.com/drive/folders/1jR_7B6e2MkvzQ3Jf0EwbfXGzt-gCe7gr?usp=sharing)  
+- Faculty Dashboard:**[Click here](https://drive.google.com/drive/folders/1jR_7B6e2MkvzQ3Jf0EwbfXGzt-gCe7gr?usp=sharing)  
 
 ---
 
